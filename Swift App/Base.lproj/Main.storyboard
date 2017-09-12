@@ -41,11 +41,33 @@
                                     <action selector="coolButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9e-NT-CbH"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GQa-Dn-nRX">
+                                <rect key="frame" x="137.5" y="150.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Yga-qx-GBz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lbu-mO-Ovl">
+                                <rect key="frame" x="137.5" y="190.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZYM-KH-KmJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i0R-4N-lRG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8fh-Ah-VeN"/>
+                            <constraint firstItem="Lbu-mO-Ovl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9bz-F5-iT7"/>
+                            <constraint firstItem="GQa-Dn-nRX" firstAttribute="top" secondItem="qBK-FG-4QJ" secondAttribute="bottom" constant="10" id="D3w-Yt-A6N"/>
+                            <constraint firstItem="Lbu-mO-Ovl" firstAttribute="top" secondItem="GQa-Dn-nRX" secondAttribute="bottom" constant="10" id="RBD-Rl-5Lf"/>
                             <constraint firstItem="qBK-FG-4QJ" firstAttribute="top" secondItem="i0R-4N-lRG" secondAttribute="bottom" constant="10" id="Zhy-PG-U1D"/>
+                            <constraint firstItem="GQa-Dn-nRX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dTK-CN-nWL"/>
                             <constraint firstItem="kMv-fE-Rkf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="djb-Lw-or7"/>
                             <constraint firstItem="kMv-fE-Rkf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="gvH-w1-5Ph"/>
                             <constraint firstItem="qBK-FG-4QJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iBr-a3-DUg"/>
@@ -53,6 +75,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="GQa-Dn-nRX" id="48m-wp-kaJ"/>
+                        <outlet property="text2" destination="Lbu-mO-Ovl" id="ga8-20-e9c"/>
                         <outlet property="theLabel" destination="kMv-fE-Rkf" id="sMR-aT-PAm"/>
                     </connections>
                 </viewController>
